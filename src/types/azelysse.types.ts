@@ -5,7 +5,7 @@ export type AzelysseClient = {
 
 type AzelysseService = {
   name: string;
-  duration: number;
+  duration: number | null;
 };
 
 type AzelysseProduct = {

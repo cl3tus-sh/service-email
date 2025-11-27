@@ -9,7 +9,7 @@ export const AzelysseClientSchema = z.object({
 
 export const AzelysseServiceSchema = z.object({
   name: z.string(),
-  duration: z.number(),
+  duration: z.number().nullable(),
 });
 
 export const AzelysseProductSchema = z.object({
