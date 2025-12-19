@@ -152,8 +152,8 @@ UpdateMeeting.PreviewProps = {
     instagram_link: "https://instagram.com/azelysse.piercing",
     phone_number: "",
     contact_email: "azelysse.piercing@gmail.com",
-    contact_phone_number: "01 64 95 93 45",
-    contact_address: "Ocus Picus - 6 Rue Molière, 91520 Égly",
+    contact_phone_number: "09 55 22 09 01",
+    contact_address: "Azelysse - 6 Rue Molière, 91520 Égly",
     facebook_link: "https://www.facebook.com/profile.php?id=61559963151913",
     instagram_username: "@azelysse.piercing",
     google_review_link:
