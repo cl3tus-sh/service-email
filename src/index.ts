@@ -26,7 +26,15 @@ const app = new Hono();
 app.use(
   "*",
   cors({
-    origin: ["https://azelysse.fr", "http://localhost:3000"],
+    origin: (origin) => {
+      // Allow azelysse.fr domain
+      if (origin === "https://azelysse.fr") return origin;
+
+      // Allow all localhost with any port (http://localhost:XXXX)
+      if (origin && /^http:\/\/localhost(:\d+)?$/.test(origin)) return origin;
+
+      return "https://azelysse.fr"; // default fallback
+    },
     allowMethods: ["GET", "POST", "OPTIONS"],
     allowHeaders: ["Content-Type", "Authorization", "x-api-key"],
   })
